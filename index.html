@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <base target="_top">
+
+    <!-- BASIC META -->
+    <meta charset="UTF-8" />
+    <title>Arcfall Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- OPEN GRAPH / SOCIAL META -->
     <meta property="og:title" content="Arcfall Online" />
@@ -13,12 +18,14 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="Bubusawin National High School" />
 
+    <!-- TWITTER -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Arcfall Online" />
     <meta name="twitter:description" content="Learn. Aim. Dominate." />
-    <meta name="twitter:image" content="https://your-school-banner-or-logo-image-url-here.jpg" />
+    <meta name="twitter:image" content="https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/bizmart-7an2vg/assets/urkllqphegly/arcfall.jpeg" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- AUTO REDIRECT -->
+    <meta http-equiv="refresh" content="0; url=https://mil-artillery-arena-556a450f.base44.app" />
 
     <style>
       html, body {
@@ -26,36 +33,43 @@
         padding: 0;
         height: 100%;
         width: 100%;
-        overflow: hidden;
+        background: #0f172a;
         font-family: Arial, sans-serif;
-        touch-action: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
       }
 
-      .iframe-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
+      .loading {
+        text-align: center;
       }
 
-      .main-iframe {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-        pointer-events: auto;
+      .spinner {
+        width: 48px;
+        height: 48px;
+        border: 4px solid rgba(255,255,255,0.2);
+        border-top: 4px solid #a855f7;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 16px;
+      }
+
+      @keyframes spin {
+        to { transform: rotate(360deg); }
       }
     </style>
   </head>
 
   <body>
-    <div class="iframe-container">
-      <iframe
-        class="main-iframe"
-        src="https://mil-artillery-arena-556a450f.base44.app"
-        allowfullscreen>
-      </iframe>
+    <div class="loading">
+      <div class="spinner"></div>
+      <p>Launching Arcfall Online…</p>
     </div>
+
+    <!-- JS fallback redirect -->
+    <script>
+      window.location.replace("https://mil-artillery-arena-556a450f.base44.app");
+    </script>
   </body>
 </html>
