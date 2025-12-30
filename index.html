@@ -46,43 +46,6 @@
         border: none;
         pointer-events: auto;
       }
-
-      /* FIXED FOOTER RECTANGLE */
-      .fixed-rectangle {
-        position: fixed;
-        bottom: 20px;
-        right: 28px;
-
-        width: clamp(125px, 20vw, 155px);
-        height: clamp(20px, 8vh, 40px);
-
-        background-color: #ffffff;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        border-radius: 8px;
-        z-index: 1000;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        padding: 8px;
-        text-align: center;
-
-        font-weight: 700;
-        font-size: clamp(12px, 1.2vw, 12px);
-        color: #000000;
-
-        pointer-events: auto;
-        user-select: none;
-      }
-
-      /* Mobile adjustments */
-      @media (max-width: 480px) {
-        .fixed-rectangle {
-          bottom: 12px;
-          right: 12px;
-        }
-      }
     </style>
   </head>
 
@@ -93,13 +56,6 @@
         src="https://mil-artillery-arena-556a450f.base44.app"
         allowfullscreen>
       </iframe>
-
-      <div class="fixed-rectangle">
-        © 2025 Bubusawin NHS
-      </div>
     </div>
   </body>
-
 </html>
-
-
